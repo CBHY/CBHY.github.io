@@ -10,9 +10,8 @@
 
 #### 	가장 많이 활용되는 모델 
 
-###### 		특히, VGG-16 > 아래 사진에 모델 D
-
-<img src="C:\Users\kkhhy\Google Drive\제목 없는 노트북 P1.png" alt="제목 없는 노트북 P1" style="zoom:30%;" />
+###### 		특히, VGG-16 > 아래 사진에 모델 
+<img src="C:\Users\kkhhy\Desktop\제목 없는 노트북 P1 (1).png" alt="제목 없는 노트북 P1 (1)" style="zoom: 33%;" />
 
 
 
