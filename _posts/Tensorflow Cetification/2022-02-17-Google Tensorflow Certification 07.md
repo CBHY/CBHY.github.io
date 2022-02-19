@@ -11,8 +11,7 @@
 #### 	가장 많이 활용되는 모델 
 
 ###### 		특히, VGG-16 > 아래 사진에 모델 
-<img src="C:\Users\kkhhy\Desktop\제목 없는 노트북 P1 (1).png" alt="제목 없는 노트북 P1 (1)" style="zoom: 33%;" />
-
+https://github.com/CBHY/git-start/issues/1#issue-1144603498
 
 
 ## 실습(VGG16 Transfer Learning)
