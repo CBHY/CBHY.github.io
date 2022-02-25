@@ -11,7 +11,7 @@
 #### 	가장 많이 활용되는 모델 
 
 ###### 		특히, VGG-16 > 아래 사진에 모델 
-https://github.com/CBHY/git-start/issues/1#issue-1144603498
+![tensorflow certification 07-1](D:\CodingData\github\cbhy.github.io\GitHub\_posts\images\2022-02-17-Google Tensorflow Certification 07\tensorflow certification 07-1.png)
 
 
 ## 실습(VGG16 Transfer Learning)
