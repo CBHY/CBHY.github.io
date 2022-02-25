@@ -1,0 +1,77 @@
+# Git 01
+
+
+
+## git 시작
+
+### 1. git 설치 (C:)
+
+### 2. git 버전 확인(git bash)
+
+```bash
+git --version
+```
+
+### 3. 엔터 키 방식 보정(Mac, Windows)
+
+```bash
+git config --global core.autocrlf true
+```
+
+#### 	이 코드를 입력하지 않으면, 협업 시 오류가 발생할 수 있다.
+
+### 4. 기타 툴(SourceTree, VS Code) 설치
+
+
+
+## git Global Setting
+
+### git 전역으로 사용자 이름과 이메일 주소를 설정
+
+```bash
+git config --global user.name "~~~~"
+```
+
+```bash
+git config --global user.email "~~~~"
+```
+
+### 확인
+
+```bash
+git config --global user.name
+```
+
+```bash
+git config --global user.email
+```
+
+### 기본 브랜치명 변경(Master -> Main)
+
+```bash
+git config --globl init.defaultBranch main
+```
+
+#### 	git에서 기본 브랜치명을 Main으로 바꾸는 것을 권유하고 있음
+
+
+
+
+
+## 프로젝트 생성, Git 관리 시작
+
+### git init
+
+```bash
+git init
+```
+
+#### 	현제 폴더를 git으로 관리하겠다는 명령어, 해당 폴더(디렉토리)에는 .git 폴더가 숨겨져 있음
+
+```bash
+git status
+```
+
+#### 	이전 커밋(git의 관리 기본 단위)과 다른 현제 상태(U : untrackted, M : modify 등...)을 나타내는 명령어
+
+

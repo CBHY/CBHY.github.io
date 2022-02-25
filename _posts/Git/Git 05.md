@@ -1,0 +1,47 @@
+# Git 05
+
+
+
+## 이전 Commit으로 되돌리기
+
+### Reset
+
+#### 	원하는 Commit으로 돌아간 뒤, 이후 내역들을 모두 지우는 방법
+
+```bash
+git log
+```
+
+##### 	git log를 통해 돌아가고자 하는 Commit의 Hash를 얻는다
+
+```bash
+git reset --hard (Hash)
+```
+
+##### 	git reset를 통해 해당 hash를 가진 Commit으로 되돌아가고 그 이후 내역을 모두 삭제한다.(default : 바로 이전 Commit)
+
+##### 	--hard : 모든 파일의 변화까지도 삭제하는 옵션
+
+
+
+### revert
+
+#### 	되돌리기 원하는 그 Commit을 취소하는 Commit을 하나 더 실행하는 방법	원하는 Commit으로 돌아간 뒤, 이후 내역들을 모두 지우는 방법
+
+```bash
+git log
+```
+
+##### 	git log를 통해 돌아가고자 하는 Commit의 Hash를 얻는다
+
+```bash
+git revert (Hash)
+```
+
+##### 	git revert를 통해, 해당 hash를 가진 Commit을 역으로 실행하는 Commit을 하나 더 추가한다.
+
+```bash
+git revert --no-commit (Hash)
+```
+
+##### 	남은 작업이 있을 때, 바로 Commit하지 않고 revert된 상태에서 작업을 마치고 함께 Commit을 진행하고 싶을 경우 사용

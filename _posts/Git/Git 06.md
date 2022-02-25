@@ -1,0 +1,42 @@
+# Git 06
+
+
+
+## Branch
+
+### 하나의 프로젝트 폴더(디렉토리)안에서 하나 이상의 프로젝트를 관리해야하거나, 여러 작업들이 독립되어 진행될 때 Branch를 사용해야 함
+
+#### 	Git 01에서, 기본 Branch명은  Master에서 Main으로 바꾸었음
+
+```bash
+# Branch 생성(-c는 생략 가능)
+git branch -c (branch)
+```
+
+```bash
+# Branch 목록 확인
+git branch
+# 원격의 Branch 목록까지 모두 확인
+git branch --all
+```
+
+```bash
+# Branch 이동
+git switch (branch)
+```
+
+```bash
+# Branch 삭제
+git branch -d (branch)
+git branch -D (branch)
+```
+
+#### 	다른 Branch에 연결되는 내용이 있는 Branch는 -d로도 삭제 가능
+
+#### 	삭제하고자 하는 Branch에만 있는 Commit을 가진 Branch는 -D를 통해 삭제해야함.
+
+```bash
+# branch 이름 변경
+git branch -m (old name) (new name)
+```
+

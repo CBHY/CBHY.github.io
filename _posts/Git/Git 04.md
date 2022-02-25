@@ -1,0 +1,52 @@
+# Git 04
+
+
+
+## Git Commit
+
+### Commit은 git의 관리 기본 단위, 프로젝트 진행상황을 모두 Commit 단위로 주고 받기 때문에, Commit 사용법은 매우 중요함. Commit이 완료되서 Repository에 파일이 이동되어야 한 단위의 작업 완료로 볼 수 있다.
+
+
+
+### Commit
+
+```bash
+git commit
+```
+
+##### 	Commit 이전에, Working directory의 내용들이 Staging area로 이동(git add .)되었는지 확인(git status)해야함
+
+#### git Bash에서, Vim편집
+
+```bash
+# 텍스트 입력 모드로 전환
+i
+# 명령어 입력 모드로 전환
+esc (key)
+# 종료
+:q
+# 저장 후 종료
+:wq
+# 위로 스크롤 
+k
+# 아래로 스크롤
+j
+```
+
+#### 	맨 윗줄에 Commit message 입력(간결하게, 무슨 작업을 진행했는지 알아볼 수 있도록)
+
+
+
+```bash
+# Commit message를 작성하면서 Commit
+git commit -m "Commit message"
+```
+
+
+
+```bash
+# commit log를 확인
+git log
+```
+
+#### 	
