@@ -1,3 +1,9 @@
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 04
 
 
@@ -12,9 +18,9 @@
 
 
 
-## data load 방법
+### data load 방법
 
-#### tfds.load문서 발췌
+tfds.load문서 발췌
 
 The easiest way of loading a dataset is [`tfds.load`](https://www.tensorflow.org/datasets/api_docs/python/tfds/load). It will:
 
@@ -38,13 +44,9 @@ Some common arguments:
 
 #### 	
 
-## iris data 분석
+### iris data 분석
 
-#### iris문서 발췌
-
-
-
-
+iris문서 발췌
 
 - **Description**:
 
@@ -111,13 +113,13 @@ institution = "University of California, Irvine, School of Information and Compu
 ### Step 1. Import
 
 ```python
-import numpy as np #numpy import
-import tensorflow as tf # tensorflow import
-from tensorflow.keras.layers import Dense, Flatten # Dense Layer, Flatten Layer import
-from tensorflow.keras.models import Sequential # Sequential Model import
-from tensorflow.keras.callbacks import ModelCheckpoint # ModelCheckpoint import
+import numpy as np 
+import tensorflow as tf 
+from tensorflow.keras.layers import Dense, Flatten 
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.callbacks import ModelCheckpoint 
 
-import tensorflow_datasets as tfds # tensorflow_dataset import
+import tensorflow_datasets as tfds
 ```
 
 
@@ -143,7 +145,8 @@ valid_dataset = tfds.load('iris', split='train[80%:]')
 def preprocess(data):
     x = data['features'] # data를 받아 feature를 x에 할당
     y = data['label']	# data를 받아 label을 y에 할당
-    y = tf.one_hot(y, 3) # 원핫인코딩, label(y)을 3개로 ex) [1, 0, 0], [0, 1, 0], [0, 0, 1]
+    y = tf.one_hot(y, 3) # 원핫인코딩, label(y)을 3개로 
+    					 # ex) [1, 0, 0], [0, 1, 0], [0, 0, 1]
     return x, y
 ```
 
@@ -167,7 +170,8 @@ model = Sequential([
     Dense(128, activation='relu'),
     Dense(64, activation='relu'),
     Dense(32, activation='relu'),
-    Dense(3, activation='softmax'), # 분류(Classification) label이 3개 -> 이진분류X, activation = 'softmax'
+    Dense(3, activation='softmax'), 
+    # 분류(Classification) label이 3개 -> 이진분류X, activation = 'softmax'
 ])
 ```
 

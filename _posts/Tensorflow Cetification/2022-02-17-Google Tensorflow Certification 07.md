@@ -1,3 +1,9 @@
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 07
 
 
@@ -8,9 +14,10 @@
 
 ### VGG-Net
 
-#### 	가장 많이 활용되는 모델 
+가장 많이 활용되는 모델 
 
-###### 		특히, VGG-16 > 아래 사진에 모델 
+특히, VGG-16 > 아래 사진에 모델 
+
 ![tensorflow certification 07-1](..\images\2022-02-17-Google Tensorflow Certification 07\tensorflow certification 07-1.png)
 
 
@@ -18,6 +25,7 @@
 
 ```python
 # 모델 불러오기
+form tensorflow.keras.models import Sequential
 from tensorflow.keras.applications import VGG16
 ```
 

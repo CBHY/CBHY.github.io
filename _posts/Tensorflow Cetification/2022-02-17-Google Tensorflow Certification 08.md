@@ -1,3 +1,9 @@
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 08
 
 
@@ -8,31 +14,37 @@
 
 ### 자언어 전처리(Nature Language Preprocessing)
 
-#### 	Step 1. 토큰화(Tokenizer) : 자연어를 단위로 쪼갠다.(문장 단위, 단어 단위, 알파벳 단위 등...)
+Step 1. 토큰화(Tokenizer) : 자연어를 단위로 쪼갠다.(문장 단위, 단어 단위, 알파벳 단위 등...)
 
-#### 	Step 2. 치환 : 토큰을 숫자(인덱스)로 치환한다.
+Step 2. 치환 : 토큰을 숫자(인덱스)로 치환한다.
 
-#### 	Step 3. 길이 맞추기 : 기준이 되는 길이로 문장을 자르거나 0을 붙혀서 길이를 맞춘다.
+Step 3. 길이 맞추기 : 기준이 되는 길이로 문장을 자르거나 0을 붙혀서 길이를 맞춘다.
 
 
 
 ### 모델링 레이어(추가)
 
-#### 	Embedding Layer : 차원을 감소시켜주는 레이어. 단어의 관계도 파악하기 수월
+#### Embedding Layer : 차원을 감소시켜주는 레이어. 단어의 관계도 파악하기 수월
 
-##### 	기존값을 넣어주면 차원의 저주에 빠져서 값이 0에 수렴함
+기존값을 넣어주면 차원의 저주에 빠져서 값이 0에 수렴함
+
+
 
 #### RNN(Recurrent Neural Network, 순환 신경망) : 순서(시간)을 반영하는 레이어
 
-##### 	문장이 길어지면 Gradient 소실이 발생
+문장이 길어지면 Gradient 소실이 발생
+
+
 
 #### LSTM(Long-Short Term Memory) : RNN의 단점을 개선한 레이어
 
-##### 	장기-단기 기억을 모두 활용해서 Gradient  소실을 최소화.
+장기-단기 기억을 모두 활용해서 Gradient  소실을 최소화.
 
-##### 	- many to one 기법
+- many to one 기법
 
-##### 	- many to many 기법
+- many to many 기법
+
+  
 
 #### Bidirectional Layer : 단어를 예측할 때 양방향에서 예측할 수 있게 해주는 레이어
 
@@ -47,15 +59,15 @@
 ```python
 import json
 import urllib
-import tensorflow_datasets as tfds # tfds import
-import numpy as np #numpy import
-import tensorflow as tf # tensorflow import
+import tensorflow_datasets as tfds 
+import numpy as np 
+import tensorflow as tf 
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Bidirectional, Flatten
-from tensorflow.keras.models import Sequential # Sequential Model import
-from tensorflow.keras.callbacks import ModelCheckpoint # ModelCheckpoint import
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.callbacks import ModelCheckpoint 
 
-from tensorflow.keras.preprocessing.text import Tokenizer # Tokenizer import
-from tensorflow.keras.preprocessing.sequence import pad_sequences # pad_sequences import
+from tensorflow.keras.preprocessing.text import Tokenizer 
+from tensorflow.keras.preprocessing.sequence import pad_sequences 
 ```
 
 
@@ -102,7 +114,7 @@ tokenizer = Tokenizer(num_words=vocab_size, oov_token='<OOV>')
 tokenizer.fit_on_texts(train_sentences) # 딕셔너리로 반환(key = 단어, vlaue = 숫자)
 ```
 
-<OOV>  	======>	 1  				# 빈도수 1위 
+<OOV> ======>	 1  	   			# 빈도수 1위 
 
 to  	======>	 2 						#빈도수 2위	
 

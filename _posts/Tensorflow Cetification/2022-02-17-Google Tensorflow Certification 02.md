@@ -1,5 +1,9 @@
-
-
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 02
 
 
@@ -10,9 +14,9 @@
 
 ### Dense Layer(Fully Connected Layer, FC)
 
-#### 	각 노드(Node, 혹은 neuron)가 완전하게 연결되어 있는 Layer
+각 노드(Node, 혹은 neuron)가 완전하게 연결되어 있는 Layer
 
-###### 	input_shape를 지정해주어야 한다.
+input_shape를 지정해주어야 한다.
 
 ![img](https://blog.kakaocdn.net/dn/bvENxB/btqFA6fIM29/lQFQDsq2fF1ovns5PxH2l1/img.png)
 
@@ -25,10 +29,10 @@
 ### Step 1. Import
 
 ```python
-import numpy as np #numpy import
-import tensorflow as tf # tensorflow import
-from tensorflow.keras.layers import Dense # Dense Layer import
-from tensorflow.keras.models import Sequential # Sequential Model import
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.layers import Dense 
+from tensorflow.keras.models import Sequential
 ```
 
 
@@ -77,7 +81,8 @@ model = Sequential([
 
 ```python
 # optimizer(최적화는) = sgd(확률적 경사하강법 알고리즘을 사용하겠다.)
-# loss(lossfunction은) = mse(Mean Squared Error함수를 사용하겠다.) >> 회귀(regression)에서는 mse 사용
+# loss(lossfunction은) = mse(Mean Squared Error함수를 사용하겠다.) 
+# >> 단순 회귀(regression)에서는 mse 사용
 
 model.compile(optimizer='sgd', loss='mse')
 ```
@@ -87,7 +92,8 @@ model.compile(optimizer='sgd', loss='mse')
 ### Step 5. Fit
 
 ```python
-# model을 학습시키겠다. (features = xs, labels = ys, epochs(학습 횟수) = 1200, verbose(학습로그) = 0(출력안함))
+# model을 학습(fit)시키겠다. 
+#(features = xs, labels = ys, epochs(학습 횟수) = 1200, verbose(학습로그) = 0(출력안함))
 
 model.fit(xs, ys, epochs=1200, verbose=0)
 ```

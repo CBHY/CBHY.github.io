@@ -1,3 +1,9 @@
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 05
 
 
@@ -8,31 +14,31 @@
 
 ### IDG(Image Data Gererator)
 
-#### 	전처리(preprocess)과정에서, 
+전처리(preprocess)과정에서, 
 
-#### 	이미지를 변형(Arguemenration)을 통해 Data set을 구성해주는 역할을 함
+이미지를 변형(Arguemenration)을 통해 Data set을 구성해주는 역할을 함
 
-###### 			flow_from_driectory()함수를 이용해서 이미지를 불러올 때 폴더명에 맞춰서 자동으로 라벨링, 사이즈조절, 베치조절 등을 한다.
+flow_from_driectory()함수를 이용해서 이미지를 불러올 때 폴더명에 맞춰서 자동으로 라벨링, 사이즈조절, 베치조절 등을 한다.
 
 
 
 ### CNN(Convolution Neural Network) : 합성 곱 신경망
 
-#### 	 효율적인 연산을 위해이미지의 특성을 추출하는 필터를 통한 Feature Map을 생성함
+효율적인 연산을 위해이미지의 특성을 추출하는 필터를 통한 Feature Map을 생성함
 
 
 
 ### Pooling Layer
 
-#### 	이미지의 사이즈를 줄여주는 레이어
+이미지의 사이즈를 줄여주는 레이어
 
-#### 	- Max Pooling : 주변 픽셀 값 중, 최대값으로만 표시
+- Max Pooling : 주변 픽셀 값 중, 최대값으로만 표시
 
-#### 	- Average Pooling : 주변 픽셀 값들의 평균값으로 표시
+- Average Pooling : 주변 픽셀 값들의 평균값으로 표시
 
 
 
-#### 보통 CNN + Activation + Pooling 을 이용해서 모델을 쌓는다.
+보통 CNN + Activation + Pooling 을 이용해서 모델을 쌓는다.
 
 
 
@@ -45,13 +51,14 @@
 ```python
 import urllib.request
 import zipfile
-import numpy as np #numpy import
-import tensorflow as tf # tensorflow import
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout # 레이어 설명은 아래에서 
-from tensorflow.keras.models import Sequential # Sequential Model import
-from tensorflow.keras.callbacks import ModelCheckpoint # ModelCheckpoint import
+import numpy as np
+import tensorflow as tf 
+from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout
+# 레이어 설명은 아래에서 
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.callbacks import ModelCheckpoint t
 
-from tensorflow.keras.preprocessing.image import ImageDataGenerator # ImageDataGenerator import
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 ```
 

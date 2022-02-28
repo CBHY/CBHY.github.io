@@ -1,3 +1,9 @@
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 06
 
 
@@ -6,9 +12,7 @@
 
 
 
-### With
-
-#### tensorflow_datasets
+With tensorflow_datasets
 
 
 
@@ -19,12 +23,12 @@
 ### Step 1. Import
 
 ```python
-import tensorflow_datasets as tfds # tfds import
-import numpy as np #numpy import
-import tensorflow as tf # tensorflow import
+import tensorflow_datasets as tfds 
+import numpy as np 
+import tensorflow as tf 
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout
-from tensorflow.keras.models import Sequential # Sequential Model import
-from tensorflow.keras.callbacks import ModelCheckpoint # ModelCheckpoint import
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.callbacks import ModelCheckpoint 
 ```
 
 
@@ -40,7 +44,7 @@ train_dataset = tfds.load(name=dataset_name, split='train[:80%]')
 valid_dataset = tfds.load(name=dataset_name, split='train[80%:]')
 ```
 
-#### 전처리(preprocessing) 요구 조건
+전처리(preprocessing) 요구 조건
 
 1. 이미지 정규화 (Normalization)
 2. 이미지 사이즈 맞추기: (224 X 224)
@@ -85,7 +89,8 @@ model = Sequential([
     Dropout(0.5), # 학습에 사용하는 Node 수 x0.5 > 과대적합 방지
     Dense(512, activation='relu'),
     Dense(128, activation='relu'),
-    Dense(2, activation='softmax'), # 분류(Classification) label이 2개 -> 이진분류O,  activation = 'softmax'
+    Dense(2, activation='softmax'),
+    # 분류(Classification) label이 2개 -> 이진분류O,  activation = 'softmax'
 ])
 ```
 

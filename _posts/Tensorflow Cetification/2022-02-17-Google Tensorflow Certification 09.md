@@ -1,3 +1,9 @@
+---
+categories: tensorflow
+tag: [tensorflow, google, google_developer,tensorflow_certification, python]
+toc: true
+author_profile: false
+---
 # Google Tensorflow Certification 09
 
 
@@ -8,25 +14,31 @@
 
 ### Windowd Dataset
 
-#### 	시계열 데이터에서 데이터를 예측하기 위해 참고할 데이터를 세팅하는 것
+시계열 데이터에서 데이터를 예측하기 위해 참고할 데이터를 세팅하는 것
 
-###### 			window_size, shift, drop_remainder # 실습 참조
+window_size, shift, drop_remainder # 실습 참조
+
+
 
 ### Conv1D(Convolution Neural Network 1-Dimention)
 
-#### 	효율적인 연산을 위해 특성을 추출하는 필터
+효율적인 연산을 위해 특성을 추출하는 필터
 
-###### 		kernel_size, strides, padding # 실습 참조
+kernel_size, strides, padding  # 실습 참조
+
+
 
 ### Optimizer 튜닝
 
-#### 	기본적인 최적화(Optimizer) 알고리즘인 SGD, ADAM 등을 튜닝할 수 있다.
+기본적인 최적화(Optimizer) 알고리즘인 SGD, ADAM 등을 튜닝할 수 있다.
 
-###### 		momentum, Learning Rate 등.. # 실습 참조
+momentum, Learning Rate 등.. # 실습 참조
+
+
 
 ### Huber Loss
 
-#### 	MSE와 MAE 중에 낮은 값을 따라가는 오차 함수
+MSE와 MAE 중에 낮은 값을 따라가는 오차 함수
 
 
 
@@ -37,15 +49,15 @@
 ```python
 import csv # csv(comma separated value) import
 import urllib
-import tensorflow_datasets as tfds # tfds import
-import numpy as np #numpy import
-import tensorflow as tf # tensorflow import
+import tensorflow_datasets as tfds 
+import numpy as np
+import tensorflow as tf
 from tensorflow.keras.layers import Dense, LSTM, Lambda, Conv1D
-from tensorflow.keras.models import Sequential # Sequential Model import
-from tensorflow.keras.callbacks import ModelCheckpoint # ModelCheckpoint import
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.callbacks import ModelCheckpoint 
 
-from tensorflow.keras.optimizers import SGD # SGD optimizer import
-from tensorflow.keras.losses import Huber # Huber loss import
+from tensorflow.keras.optimizers import SGD 
+from tensorflow.keras.losses import Huber
 ```
 
 
