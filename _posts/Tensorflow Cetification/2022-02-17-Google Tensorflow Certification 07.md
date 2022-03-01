@@ -18,7 +18,7 @@ author_profile: false
 
 특히, VGG-16 > 아래 사진에 모델 
 
-![tensorflow certification 07-1](..\images\2022-02-17-Google Tensorflow Certification 07\tensorflow certification 07-1.png)
+> ![tensorflow certification 07-1](https://user-images.githubusercontent.com/90018287/156185376-8b004fec-80f9-468b-92bf-c4bd7746a7c4.png)
 
 
 ## 실습(VGG16 Transfer Learning)
