@@ -1,3 +1,8 @@
+---
+categories: OpenCV_Basic
+tag: [OpenCV, cv2, numpy, np, python, lib]
+toc: true
+---
 # OpenCV Basic 03
 
 
